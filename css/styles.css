@@ -9,3 +9,64 @@
     --text: 'Poppins', sans-serif;
     --handwritten: 'Apple', cursive;
 }
+
+body {
+    font-family: var(--text);
+}
+
+.navbar {
+    height: auto;
+}
+
+.navbar-toggler {
+    padding-top: 7px;
+    padding-left: 0px;
+}
+
+.navbar-toggler-icon {
+    color: var(--orange);
+}
+
+.nav-link {
+    color: var(--orange);
+}
+
+.nav-link:hover {
+    color: var(--orange);
+    filter: brightness(70%);
+}
+
+.hero-image {
+    background: url(/media/header-img.jpg) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+.hero-text {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    width: 51%;
+    padding: 3rem 3.25rem 0.75rem 10%;
+    background-color: var(--black);
+    position: absolute;
+    bottom: -0.1rem;
+    right: 0rem;
+}
+
+.hero-text h1,
+.hero-text h2 {
+    color: var(--orange);
+}
+
+.hero-text h1 {
+    font-size: 4em;
+}
+
+.hero-text h2 {
+    letter-spacing: 4px;
+}
+
+.-section {
+    height: 100vh;
+    background-color: var(--black);
+}
