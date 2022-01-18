@@ -1,0 +1,2 @@
+# Stay Vertical Pole Studio - V2
+The aim of this project is to remake my first Milestone Project [Stay Vertical Pole Studio](https://github.com/lmw95/stayverticalpolestudio), using the same media, images, icons, colour schemes etc. to see how my front-end web design skills have developed, and see what I can make using a restricted set of assets.
