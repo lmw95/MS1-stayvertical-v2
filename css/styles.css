@@ -99,7 +99,7 @@ body {
 }
 
 .card {
-    border-radius: 25px !important;
+    border-radius: 15px !important;
     background-color: var(--orange);
     color: var(--black);
     border: none;
@@ -114,14 +114,15 @@ body {
 }
 
 .card-title {
+    color: var(--purple);
     font-size: 1.3em;
     border-bottom: 2px solid var(--purple-t2);
 }
 
 .card-img {
     background-color: var(--purple-t);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -253,6 +254,14 @@ body {
 
     .card-title {
         font-size: 3.5vw !important;
+    }
+
+    .hero-img-wrapper {
+        justify-content: start !important;
+    }
+
+    .hero-img-wrapper img {
+        margin-left: 30px;
     }
 
 }
