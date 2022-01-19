@@ -16,6 +16,10 @@ body {
     font-family: var(--text);
 }
 
+
+/*----------[ Header/nav ]----------*/
+
+
 .navbar {
     height: auto;
 }
@@ -80,17 +84,78 @@ body {
     background-color: var(--black);
 }
 
+
+/*----------[ Classes ]----------*/
+
+
 .classes {
-    height: 100vh;
     background: -webkit-linear-gradient(45deg, var(--purple), var(--orange) 90%);
-        -webkit-text-fill-color: transparent;
 }
+
+.classes h1 {
+    color: var(--black);
+    font-size: 3vw;
+}
+
+.card {
+    border-radius: 25px !important;
+    background-color: var(--orange);
+    color: var(--black);
+    border: none;
+    outline: none;
+    transition: transform 0.1s, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 15px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.09);
+    transform: scale(1.02);
+}
+
+.card-title {
+    font-size: 1.3em;
+}
+
+.card-img {
+    background-color: var(--purple);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card img {
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+}
+
+.card a {
+    background-color: var(--purple-t);
+    padding: 12px;
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+.card a:hover {
+    background-color: var(--purple);
+    transform: translateY(-5px);
+    color: var(--white);
+}
+
+.card-text {
+    text-align: justify;
+}
+
+
+/*----------[ Media queries ]----------*/
 
 
 @media screen and (max-width: 432px) {
 
     .hero-text h2 {
         font-size: 0.6em !important;
+    }
+
+    .classes-container {
+        padding: 1em !important;
     }
 
 }
@@ -101,6 +166,16 @@ body {
     .hero-text {
         max-width: 100%;
         padding-right: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
+    .card-text {
+        height: 150px;
+        font-size: 2vw;
     }
 
 }
@@ -118,6 +193,10 @@ body {
         margin-bottom: 20px;
     }
 
+    .card-body h5 {
+        font-size: 5vw !important;
+    }
+
 }
 
 
@@ -125,6 +204,29 @@ body {
 
     .hero-text h2 {
         font-size: 0.7em;
+    }
+
+}
+
+
+@media screen and (min-width: 991px) {
+
+    .card-text {
+        height: 150px;
+        font-size: 1.1vw;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card-title {
+        font-size: 3.5vw !important;
     }
 
 }
@@ -154,4 +256,11 @@ body {
         font-size: 0.7em;
     }
 
+}
+
+@media screen and (min-width: 1140px) {
+
+    .card-title {
+        font-size: 1.9vw !important;
+    }
 }
