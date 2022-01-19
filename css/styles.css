@@ -3,8 +3,10 @@
 
 :root {
     --black: #191919;
+    --black-it: rgba(25, 25, 25, 0.7);
     --white: #E8E8E8;
     --purple: #564256;
+    --purple-t: rgba(86, 66, 86, 0.7);
     --orange: #FC814A;
     --text: 'Poppins', sans-serif;
     --handwritten: 'Apple', cursive;
@@ -34,6 +36,11 @@ body {
 .nav-link:hover {
     color: var(--orange);
     filter: brightness(70%);
+}
+
+.nav-scrolled {
+    background-color: var(--purple-t) !important;
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-image {
@@ -69,4 +76,74 @@ body {
 .-section {
     height: 100vh;
     background-color: var(--black);
+}
+
+
+@media screen and (max-width: 432px) {
+
+    .hero-text h2 {
+        font-size: 0.6em !important;
+    }
+
+}
+
+
+@media screen and (max-width: 648px) {
+
+    .hero-text {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 774px) {
+
+    .hero-text h1 {
+        font-size: 2.4em !important;
+    }
+
+    .hero-text img {
+        height: 90px !important;
+        width: 90px !important;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 814px) {
+
+    .hero-text h2 {
+        font-size: 0.7em;
+    }
+
+}
+
+
+@media screen and (max-width: 1163px) {
+
+    .hero-text {
+        width: 80%;
+    }
+
+    .hero-text h1 {
+        font-size: 3.2em;
+    }
+
+    .hero-text img {
+        height: 120px;
+        width: 120px;
+    }
+
+}
+
+
+@media screen and (max-width: 1333px) {
+
+    .hero-text h2 {
+        font-size: 0.7em;
+    }
+
 }
