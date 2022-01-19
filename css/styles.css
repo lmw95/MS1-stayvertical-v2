@@ -7,6 +7,7 @@
     --white: #E8E8E8;
     --purple: #564256;
     --purple-t: rgba(86, 66, 86, 0.6);
+    --purple-t2: rgba(86, 66, 86, 0.3);
     --orange: #FC814A;
     --text: 'Poppins', sans-serif;
     --handwritten: 'Apple', cursive;
@@ -103,22 +104,29 @@ body {
     color: var(--black);
     border: none;
     outline: none;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.09);
     transition: transform 0.1s, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-    box-shadow: 0 15px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.09);
+    box-shadow: 0px 15px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.09);
     transform: scale(1.02);
 }
 
 .card-title {
     font-size: 1.3em;
+    border-bottom: 2px solid var(--purple-t2);
 }
 
 .card-img {
-    background-color: var(--purple);
+    background-color: var(--purple-t);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-img-purple {
+    background-color: var(--purple);
 }
 
 .card img {
@@ -145,6 +153,24 @@ body {
 }
 
 
+/*----------[ Class subsections (hidden) ]----------*/
+
+
+.pole-classes,
+.hoop-classes,
+.timetable {
+    background-color: var(--black);
+}
+
+.pole-classes h1,
+.hoop-classes h1,
+.timetable h1 {
+    background: -webkit-linear-gradient(45deg, var(--orange), var(--white) 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 /*----------[ Media queries ]----------*/
 
 
@@ -166,6 +192,10 @@ body {
     .hero-text {
         max-width: 100%;
         padding-right: 0;
+    }
+
+    .card-body h5 {
+        font-size: 4.5vw !important;
     }
 
 }
@@ -191,10 +221,6 @@ body {
         height: 90px !important;
         width: 90px !important;
         margin-bottom: 20px;
-    }
-
-    .card-body h5 {
-        font-size: 5vw !important;
     }
 
 }
