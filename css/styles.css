@@ -6,7 +6,7 @@
     --black-it: rgba(25, 25, 25, 0.7);
     --white: #E8E8E8;
     --purple: #564256;
-    --purple-t: rgba(86, 66, 86, 0.7);
+    --purple-t: rgba(86, 66, 86, 0.6);
     --orange: #FC814A;
     --text: 'Poppins', sans-serif;
     --handwritten: 'Apple', cursive;
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-toggler {
-    padding-top: 7px;
+    padding: 0.2em 0.75em 0.75em;
     padding-left: 0px;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .nav-scrolled {
-    background-color: var(--purple-t) !important;
+    background-color: var(--purple) !important;
     transition: all 0.3s ease-in-out;
 }
 
@@ -51,9 +51,9 @@ body {
 }
 
 .hero-text {
-    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0, 100% 20px, 100% 100%, 0% 100%);
     width: 51%;
-    padding: 3rem 3.25rem 0.75rem 10%;
+    padding: 3rem 3.25rem 0.75rem 8%;
     background-color: var(--black);
     position: absolute;
     bottom: -0.1rem;
@@ -62,7 +62,9 @@ body {
 
 .hero-text h1,
 .hero-text h2 {
-    color: var(--orange);
+  background: -webkit-linear-gradient(45deg, var(--orange), var(--purple) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-text h1 {
@@ -73,9 +75,15 @@ body {
     letter-spacing: 4px;
 }
 
-.-section {
-    height: 100vh;
+.header-bottom {
+    height: 10vh;
     background-color: var(--black);
+}
+
+.classes {
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, var(--purple), var(--orange) 90%);
+        -webkit-text-fill-color: transparent;
 }
 
 
