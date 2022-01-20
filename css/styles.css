@@ -180,6 +180,27 @@ body {
 }
 
 
+/*----------[ About section ]----------*/
+
+.about {
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+.about h1 {
+    background: -webkit-linear-gradient(45deg, var(--orange), var(--white) 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.about hr {
+    border-top: var(--purple-t2);
+}
+
 /*----------[ Contact section ]----------*/
 
 
