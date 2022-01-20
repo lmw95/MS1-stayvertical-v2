@@ -187,7 +187,8 @@ body {
 
 .contact {
     height: 100vh;
-    background-color: var(--black);
+    background: url(/media/pole-dance-class.jpg) no-repeat center;
+    background-size: cover;
     color: var(--white);
 }
 
