@@ -45,7 +45,7 @@ body {
 }
 
 .nav-scrolled {
-    background-color: var(--purple) !important;
+    background: -webkit-linear-gradient(360deg, var(--purple), transparent 60%) !important;
     box-shadow: 0 5px 10px rgba(0,0,0,.1), 0 5px 5px rgba(0,0,0,.1);
     transition: all 0.3s ease-in-out;
 }
@@ -96,8 +96,8 @@ body {
 }
 
 .classes h1 {
-    color: var(--black);
-    font-size: 3vw;
+    color: var(--white);
+    font-size: 3em;
 }
 
 .card {
@@ -166,6 +166,7 @@ body {
 .hoop-classes,
 .choreography-classes,
 .strength-classes {
+    height: 100vh;
     background-color: var(--black);
 }
 
@@ -176,11 +177,6 @@ body {
     background: -webkit-linear-gradient(45deg, var(--orange), var(--white) 40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.classes h1 {
-    color: var(--white);
-    font-size: 3em;
 }
 
 
