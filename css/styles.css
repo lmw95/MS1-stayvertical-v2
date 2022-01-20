@@ -207,6 +207,23 @@ body {
     height: auto;
 }
 
+.about-left a,
+.back {
+    background-color: var(--purple-t);
+    color: var(--white);
+    padding: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.08), 0 0 5px rgba(0,0,0,.09);
+    transition: all 0.3s ease-in-out;
+}
+
+.about-left a:hover,
+.back:hover {
+    color: var(--white);
+    background-color: var(--purple);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1), 0 5px 5px rgba(0,0,0,.1);
+    transform: translateY(-5px);
+}
+
 .carousel-cell {
     width: 66%;
     margin-right: 10px;
@@ -385,6 +402,33 @@ body {
 }
 
 
+/*----------[ 404 error ]----------*/
+
+
+.body-404 {
+    height: 80.5vh;
+    background: url(../media/pole-dance-class.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.nav-404 {
+    background: -webkit-linear-gradient(360deg, var(--purple), transparent 65%) !important;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1), 0 5px 5px rgba(0,0,0,.1);
+}
+
+.error-wrapper {
+    height: 70%;
+    width: 70%;
+    clip-path: polygon(0% 0%, 100% 40px, 90% 90%, 5% 85%);
+    background: -webkit-linear-gradient(45deg, var(--orange), var(--purple) 80%);
+}
+
+.error-wrapper h1 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
 /*----------[ Media queries ]----------*/
 
 
@@ -396,6 +440,10 @@ body {
 
     .classes-container {
         padding: 1em !important;
+    }
+
+    .error-wrapper h1 {
+        font-size: 1em !important;
     }
 
 }
@@ -496,6 +544,19 @@ body {
 
     .hero-text h2 {
         font-size: 0.7em;
+    }
+
+    .error-wrapper {
+        height: 80%;
+        width: 70%;
+    }
+
+    .error-wrapper h1 {
+        font-size: 1.5em;
+    }
+
+    .back {
+        width: 50% !important;
     }
 
 }
