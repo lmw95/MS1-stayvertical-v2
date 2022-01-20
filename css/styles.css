@@ -10,6 +10,7 @@
     --purple-t2: rgba(86, 66, 86, 0.3);
     --orange: #FC814A;
     --orange-t: rgba(252, 129, 74, 0.6);
+    --orange-t2: rgba(252, 129, 74, 0.3);
     --text: 'Poppins', sans-serif;
     --handwritten: 'Apple', cursive;
 }
@@ -199,6 +200,83 @@ body {
 
 .about hr {
     border-top: var(--purple-t2);
+}
+
+.about-left,
+.about-right {
+    height: auto;
+}
+
+.carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    background:-webkit-linear-gradient(45deg, var(--orange-t2), var(--purple-t2) 80%);
+    border-radius: 15px;
+    color: var(--white);
+}
+
+.flickity-button {
+    color: var(--white);
+    background-color: transparent;
+}
+
+.flickity-button:hover {
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+.flickity-button:focus {
+    background-color: var(--purple);
+    color: var(--white);
+    outline: none;
+    border: none;
+}
+
+.profile-img,
+.profile-img-2,
+.profile-img-3,
+.profile-img-4 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-img {
+    background: url(../media/pole-instructor.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.profile-img-2 {
+    background: url(../media/pole-instructor2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.profile-img-3 {
+    background: url(../media/pole-instructor3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.profile-img-4 {
+    background: url(../media/pole-instructor4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.profile-sm {
+    background-color: var(--purple);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.profile-sm a {
+    color: var(--white);
+}
+
+.flickity-page-dots {
+    bottom: -35px;
+}
+
+.flickity-page-dots .dot {
+    background: var(--orange);
 }
 
 /*----------[ Contact section ]----------*/
