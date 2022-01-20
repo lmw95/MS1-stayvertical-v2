@@ -51,7 +51,7 @@ body {
 }
 
 .hero-image {
-    background: url(/media/header-img.jpg) no-repeat center;
+    background: url(media/header-img.jpg) no-repeat center;
     background-size: cover;
     height: 90vh;
     position: relative;
@@ -189,7 +189,7 @@ body {
 
 .contact {
     height: 100vh;
-    background: url(/media/pole-dance-class.jpg) no-repeat center;
+    background: url(media/pole-dance-class.jpg) no-repeat center;
     background-size: cover;
     color: var(--white);
 }
