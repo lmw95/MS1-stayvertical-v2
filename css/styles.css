@@ -310,7 +310,11 @@ body {
     }
 
     .contact-form-wrapper h1 {
-        padding: 2em 1em !important;
+        padding: 2em 1em 0em !important;
+    }
+
+    .contact-form-wrapper p {
+        padding: 0em 2em 2em !important;
     }
 
     .form-wrapper {
