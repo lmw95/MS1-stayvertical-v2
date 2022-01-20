@@ -9,6 +9,7 @@
     --purple-t: rgba(86, 66, 86, 0.6);
     --purple-t2: rgba(86, 66, 86, 0.3);
     --orange: #FC814A;
+    --orange-t: rgba(252, 129, 74, 0.6);
     --text: 'Poppins', sans-serif;
     --handwritten: 'Apple', cursive;
 }
@@ -23,6 +24,7 @@ body {
 
 .navbar {
     height: auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1), 0 5px 5px rgba(0,0,0,.1);
 }
 
 .navbar-toggler {
@@ -67,9 +69,9 @@ body {
 
 .hero-text h1,
 .hero-text h2 {
-  background: -webkit-linear-gradient(45deg, var(--orange), var(--purple) 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(45deg, var(--orange), var(--purple) 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .hero-text h1 {
@@ -226,7 +228,7 @@ body {
     color: var(--white);
     padding: 12px;
     box-shadow: 0 5px 10px rgba(0,0,0,.08), 0 0 5px rgba(0,0,0,.09);
-    transition: transform 0.1s, box-shadow 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .contact-form button:hover {
@@ -236,8 +238,36 @@ body {
 }
 
 
-/*----------[ Media queries ]----------*/
+/*----------[ Testimonials ]----------*/
 
+
+
+/*----------[ Footer ]----------*/
+
+
+.footer {
+    background-color: var(--black);
+}
+
+.footer h1 {
+    background: -webkit-linear-gradient(45deg, var(--orange), var(--purple) 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.footer-social-media a {
+    color: var(--orange-t);
+    transition: all 0.1s ease-in-out;
+}
+
+.footer-social-media a:hover {
+    color: var(--orange);
+    transform: scale(1.2);
+}
+
+.footer-contact {
+    color: var(--orange-t);
+}
 
 
 /*----------[ Media queries ]----------*/
@@ -285,6 +315,25 @@ body {
 
     .form-wrapper {
         padding: 0 1.6em 1.6em 1.6em !important;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .footer-icon {
+        order: 0 !important;
+    }
+
+    .footer-contact {
+        order: 2 !important;
+        justify-content: center !important;
+    }
+
+    .footer-social-media {
+        order: 1 !important;
+        justify-content: center !important;
     }
 
 }
