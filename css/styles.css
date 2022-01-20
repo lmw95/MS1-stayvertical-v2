@@ -195,7 +195,7 @@ body {
 }
 
 .contact-form-wrapper {
-    height: 80%;
+    height: 85%;
     width: 80%;
     clip-path: polygon(0% 0%, 100% 40px, 90% 90%, 5% 85%);
     background: -webkit-linear-gradient(45deg, var(--orange), var(--purple) 80%);
