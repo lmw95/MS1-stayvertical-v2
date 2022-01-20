@@ -45,7 +45,7 @@ body {
 }
 
 .nav-scrolled {
-    background: -webkit-linear-gradient(360deg, var(--purple), transparent 60%) !important;
+    background: -webkit-linear-gradient(360deg, var(--purple), transparent 65%) !important;
     box-shadow: 0 5px 10px rgba(0,0,0,.1), 0 5px 5px rgba(0,0,0,.1);
     transition: all 0.3s ease-in-out;
 }
